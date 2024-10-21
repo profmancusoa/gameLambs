@@ -10,18 +10,26 @@
 
 <style>
     .about {
+        width: 60%;
+        height: 80vh;
+        margin: auto;
         text-align: center;
         padding: 2rem;
         font-size: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .about h1 {
-        color: #f39c12; /* Giallo brillante della palette */
+        color: #f39c12;
     }
 
     .about p {
         font-size: 2rem;
         line-height: 1.6;
+        color: white;
     }
 
     /* Responsività */
