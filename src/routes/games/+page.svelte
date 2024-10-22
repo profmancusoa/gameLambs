@@ -2,11 +2,28 @@
     // Dati dei giochi. In un'applicazione reale potresti caricarli dinamicamente
     const games = [
         {
+            id: "tris",
+            title: "Tris",
+            description: "Il classico gioco del tris.",
+            image: "/images/tris.png",
+            url: "https://tris.mancusoa.it",
+            github: "",
+        },
+        {
+            id: "tetris",
+            title: "Tetris",
+            description: "Il classico gioco del tetris.",
+            image: "/images/tetris.png",
+            url: "https://tetris.mancusoa.it",
+            github: "",
+        },
+        {
             id: "parole",
             title: "pArole",
             description: "Il classico gioco Wordle.",
             image: "/images/parole.png",
             url: "https://parole.mancusoa.it",
+            github: "https://github.com/profmancusoa/pArole",
         },
         {
             id: "bitfinder",
@@ -14,6 +31,7 @@
             description: "Sfida i tuoi amici in binario",
             image: "/images/bitfinder.png",
             url: "https://bitfinder.mancusoa.it",
+            github: "https://github.com/profmancusoa/BitFinder",
         },
         {
             id: "colorclash",
@@ -21,6 +39,7 @@
             description: "Divertente Tile Game",
             image: "/images/colorclash.png",
             url: "https://colorclash.mancusoa.it",
+            github: "https://github.com/profmancusoa/ColorClash",
         },
         {
             id: "labirinto",
@@ -28,13 +47,15 @@
             description: "Trova la via giusta per l'uscita",
             image: "/images/labirinto.png",
             url: "https://labirinto.mancusoa.it",
+            github: "https://github.com/profmancusoa/labirinto",
         },
         {
             id: "2048",
-            title: "2048",
+            title: "2048s",
             description: "Realizza 2048 punti",
             image: "/images/2048.png",
             url: "https://2048.mancusoa.it",
+            github: "https://github.com/profmancusoa/2048s",
         },
         {
             id: "sudoko",
@@ -42,30 +63,7 @@
             description: "Risolvi qualsiasi Sudoko",
             image: "/images/sudoko.png",
             url: "https://sudoko.mancusoa.it",
-        },
-        {
-            id: "pong",
-            title: "Pong",
-            description: "Gioca a Ping Pong classico!",
-            image: "/images/snake.png",
-        },
-        {
-            id: "breakout",
-            title: "Breakout",
-            description: "Distruggi i mattoni con la pallina.",
-            image: "/images/snake.png",
-        },
-        {
-            id: "breakout",
-            title: "Breakout",
-            description: "Distruggi i mattoni con la pallina.",
-            image: "/images/snake.png",
-        },
-        {
-            id: "breakout",
-            title: "Breakout3",
-            description: "Distruggi i mattoni con la pallina.",
-            image: "/images/snake.png",
+            github: "https://github.com/profmancusoa/Sudoko_Solver",
         },
     ];
 </script>
@@ -76,7 +74,10 @@
             <a href={game.url} target="_blank">
                 <img src={game.image} alt={game.title} class="game-image" />
             </a>
-            <h3><a href={game.url} target="_blank">{game.title}</a></h3>
+            <h3>
+                <a href={game.github} target="_blank">GitHub</a>
+            </h3>
+
             <p>{game.description}</p>
         </div>
     {/each}
@@ -86,7 +87,7 @@
     /* Sezione per la griglia dei giochi */
     .games-grid {
         display: grid;
-        grid-template-columns: repeat(3, 1fr); /* Griglia 3 colonne */
+        grid-template-columns: repeat(4, 1fr); /* Griglia 3 colonne */
         gap: 5rem;
         padding: 2rem;
         margin: auto;
