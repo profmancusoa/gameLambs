@@ -15,7 +15,7 @@
             description: "Il classico gioco del tetris.",
             image: "/images/tetris.png",
             url: "https://tetris.mancusoa.it",
-            github: "",
+            github: "https://github.com/Riglietti-Nicolo/Tetris",
         },
         {
             id: "parole",
