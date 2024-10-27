@@ -15,7 +15,15 @@
             description: "Il classico gioco del tetris.",
             image: "/images/tetris.png",
             url: "https://tetris.mancusoa.it",
-            github: "https://github.com/Riglietti-Nicolo/Tetris",
+            github: "https://github.com/profmancusoa/Tetris",
+        },
+        {
+            id: "dino",
+            title: "Dino Crisis 2d",
+            description: "Dino Crisis 2d",
+            image: "/images/dino.png",
+            url: "https://dino.mancusoa.it",
+            github: "https://github.com/profmancusoa/DinoCrisis_2d",
         },
         {
             id: "parole",
@@ -62,7 +70,7 @@
             title: "Sudoko Solver",
             description: "Risolvi qualsiasi Sudoko",
             image: "/images/sudoko.png",
-            url: "https://sudoko.mancusoa.it",
+            url: "https://sudoku.mancusoa.it",
             github: "https://github.com/profmancusoa/Sudoko_Solver",
         },
     ];
@@ -87,7 +95,7 @@
     /* Sezione per la griglia dei giochi */
     .games-grid {
         display: grid;
-        grid-template-columns: repeat(4, 1fr); /* Griglia 3 colonne */
+        grid-template-columns: repeat(5, 1fr);
         gap: 5rem;
         padding: 2rem;
         margin: auto;
