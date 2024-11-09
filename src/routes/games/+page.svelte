@@ -1,14 +1,14 @@
 <script>
     // Dati dei giochi. In un'applicazione reale potresti caricarli dinamicamente
     const games = [
-        // {
-        //     id: "tris",
-        //     title: "Tris",
-        //     description: "Il classico gioco del tris.",
-        //     image: "/images/tris.png",
-        //     url: "",
-        //     github: "https://github.com/Rossi-Tommaso/TrisJavascript",
-        // },
+        {
+            id: "tris",
+            title: "Tris",
+            description: "Il classico gioco del tris.",
+            image: "/images/tris.png",
+            url: "https://rossi-tommaso.github.io/TrisJavascript/",
+            github: "https://github.com/Rossi-Tommaso/TrisJavascript",
+        },
         {
             id: "tetris",
             title: "Tetris",
