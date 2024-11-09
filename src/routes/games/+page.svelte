@@ -1,30 +1,38 @@
 <script>
     // Dati dei giochi. In un'applicazione reale potresti caricarli dinamicamente
     const games = [
-        {
-            id: "tris",
-            title: "Tris",
-            description: "Il classico gioco del tris.",
-            image: "/images/tris.png",
-            url: "https://tris.mancusoa.it",
-            github: "",
-        },
+        // {
+        //     id: "tris",
+        //     title: "Tris",
+        //     description: "Il classico gioco del tris.",
+        //     image: "/images/tris.png",
+        //     url: "",
+        //     github: "https://github.com/Rossi-Tommaso/TrisJavascript",
+        // },
         {
             id: "tetris",
             title: "Tetris",
             description: "Il classico gioco del tetris.",
             image: "/images/tetris.png",
-            url: "https://tetris.mancusoa.it",
-            github: "https://github.com/profmancusoa/Tetris",
+            url: "https://riglietti-nicolo.github.io/Tetris/",
+            github: "https://github.com/Riglietti-Nicolo/Tetris",
         },
         {
-            id: "dino",
-            title: "Dino Crisis 2d",
-            description: "Dino Crisis 2d",
-            image: "/images/dino.png",
-            url: "https://dino.mancusoa.it",
-            github: "https://github.com/profmancusoa/DinoCrisis_2d",
+            id: "tux-twins",
+            title: "Tux Twins",
+            description: "Il classico gioco del memory con Tux",
+            image: "/images/tuxtwins.webp",
+            url: "https://riglietti-nicolo.github.io/Memory_Linux/",
+            github: "https://github.com/Riglietti-Nicolo/Memory_Linux",
         },
+        // {
+        //     id: "dino",
+        //     title: "Dino Crisis 2d",
+        //     description: "Dino Crisis 2d",
+        //     image: "/images/dino.png",
+        //     url: "",
+        //     github: "https://github.com/FoxWard92/DinoCrisis_2d",
+        // },
         {
             id: "parole",
             title: "pArole",
@@ -83,7 +91,7 @@
                 <img src={game.image} alt={game.title} class="game-image" />
             </a>
             <h3>
-                <a href={game.github} target="_blank">GitHub</a>
+                <a href={game.github} target="_blank">{game.title}</a>
             </h3>
 
             <p>{game.description}</p>
